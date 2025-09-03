@@ -155,7 +155,7 @@ def send_report_if_workday():
 
 def start_scheduler():
     scheduler = BackgroundScheduler(timezone=pytz.timezone("Asia/Kolkata"))  # IST timezone
-    scheduler.add_job(send_report_if_workday,CronTrigger(hour=12, minute=44, timezone=pytz.timezone("Asia/Kolkata")))
+    scheduler.add_job(send_report_if_workday,CronTrigger(hour=12, minute=48, timezone=pytz.timezone("Asia/Kolkata")))
     scheduler.start()
 
 # -------------------- Main --------------------
